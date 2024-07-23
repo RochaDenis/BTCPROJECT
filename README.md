@@ -25,12 +25,12 @@ cd bitcoin-wallet-generator
 npm install
 
 
-##Uso
+## Uso
 Para gerar uma nova carteira Bitcoin, execute o seguinte comando:
 node src/createWallet.js
 
 
-##Saída Esperada
+## Saída Esperada
 Ao executar o comando acima, você verá uma saída semelhante a esta:
 
 Carteira Gerada
@@ -38,7 +38,7 @@ Endereço :  mkiQ2WqxkhpqVX6QHwgWJJRdQ9XNVpmJCN
 Chave Privada :  cT3CDxPqzdnd4q5FkELB9y2yMfA58Q1i5MMNu7UFSXab2hkg63DM
 Seed :  crush satoshi hat penalty bright grow luggage sun credit galaxy swear wall
 
-##Explicação do Código
+## Explicação do Código
 Importando as dependências: Utilizamos bip32 para geração de chaves HD, bip39 para criação e conversão de mnemonics, e bitcoinjs-lib para manipulação de endereços Bitcoin. tiny-secp256k1 é usado para operações criptográficas.
 
 Inicializando bip32 com tiny-secp256k1: Configura a biblioteca bip32 para usar tiny-secp256k1, que é uma implementação de secp256k1 em JavaScript.
@@ -53,5 +53,5 @@ Criando a raiz da carteira HD: Gera a raiz da carteira a partir da seed.
 
 Criando uma conta e gerando o endereço Bitcoin: Deriva a chave pública e privada da conta e cria um endereço Bitcoin associado.
 
-##Licença
+## Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
